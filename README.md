@@ -110,7 +110,7 @@ print (int(float(a + "." + b)//1.9))
 ### P5709 【深基2.习6】Apples Prologue
 ```python
 m,t,s = map (int,input().split())
-print (0 if m-s//t-1<0 else (m-s//t if s%t == 0 else m-s//t-1))
+print (0 if t==0 or m-s//t-1<0 else (m-s//t if s%t == 0 else m-s//t-1))
 ```
 ### P2181	对角线
 ```python
