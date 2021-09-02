@@ -117,6 +117,20 @@ print (0 if m-s//t-1<0 else (m-s//t if s%t == 0 else m-s//t-1))
 n= int(input())
 print (n*(n-1)*(n-2)*(n-3)//24)
 ```
+### p5707   【深基2.例12】上学迟到
+```python
+import math 
+import time
+
+s , v =map(int,input().split())
+
+t = math.ceil(s/v)
+if t < 480:
+    T = 8*60-t-10
+else:
+    T = 32*60-t-10
+print('%02d:%02d'%(T//60,T%60))
+```
 ## 【入门2】分支结构
 ### P5710	【深基3.例2】数的性质
 ```python
